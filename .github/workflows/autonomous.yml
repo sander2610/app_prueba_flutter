@@ -1,0 +1,27 @@
+name: FlutterFix Autonomous Society
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  autonomous-cycle:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: pip install psutil
+    - name: Run Autonomous Society
+      run: python flutter_fix_v22.py &
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: flutterfix-reports
+        path: ~/.flutterfix/
