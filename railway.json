@@ -1,0 +1,13 @@
+{
+  "build": {
+    "builder": "nixpacks"
+  },
+  "environments": {
+    "production": {
+      "variables": {
+        "FLASK_ENV": "production",
+        "PYTHON_VERSION": "3.11"
+      }
+    }
+  }
+}
