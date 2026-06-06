@@ -1,0 +1,32 @@
+
+name: Flutter Error Analysis
+
+on:
+  push:
+    paths:
+      - 'lib/**'
+  pull_request:
+    paths:
+      - 'lib/**'
+  workflow_dispatch:
+
+jobs:
+  analyze-errors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Run FlutterFix
+        run: |
+          python flutter_fix_cascade.py --ci-mode --project-path .
+      
+      - name: Upload Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: flutterfix-report
+          path: ~/.flutterfix/reports/
