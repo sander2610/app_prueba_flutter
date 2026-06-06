@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Society - Decentralized Web Store</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; color: white; padding: 40px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .product { background: white; border-radius: 15px; padding: 20px; text-align: center; transition: transform 0.3s; }
+        .product:hover { transform: translateY(-5px); }
+        .product h3 { color: #1e3c72; margin-bottom: 10px; }
+        .price { font-size: 1.5em; color: #2a5298; font-weight: bold; margin: 10px 0; }
+        button { background: #2a5298; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #1e3c72; }
+        .badge { display: inline-block; background: #10b981; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 Web Society</h1>
+            <p>Decentralized Web Store - Plataforma de E-commerce Descentralizada</p>
+            <div class="badge">🔗 Blockchain Ready</div>
+        </div>
+        <div class="products" id="products"></div>
+    </div>
+    <script>
+        const products = [
+            { id: 1, name: "Camiseta Web3", price: 29.99, emoji: "👕" },
+            { id: 2, name: "Gorra Blockchain", price: 19.99, emoji: "🧢" },
+            { id: 3, name: "Sudadera Decentralized", price: 49.99, emoji: "👚" }
+        ];
+        function renderProducts() {
+            const container = document.getElementById('products');
+            container.innerHTML = products.map(p => `
+                <div class="product">
+                    <div style="font-size: 3em;">${p.emoji}</div>
+                    <h3>${p.name}</h3>
+                    <div class="price">$${p.price}</div>
+                    <button onclick="alert('✅ Producto agregado al carrito descentralizado')">🛒 Comprar</button>
+                </div>
+            `).join('');
+        }
+        renderProducts();
+    </script>
+</body>
+</html>

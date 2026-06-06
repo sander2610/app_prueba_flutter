@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "Proyecto de FlutterFix",
+    "tipo": "login_ui",
+    "fecha": "2026-06-06T08:33:18.516018",
+    "estado": "en_desarrollo"
+  },
+  {
+    "nombre": "Proyecto de GameDev",
+    "tipo": "animacion",
+    "fecha": "2026-06-06T08:33:18.517107",
+    "estado": "en_desarrollo"
+  },
+  {
+    "nombre": "Proyecto de DataScience",
+    "tipo": "reporte",
+    "fecha": "2026-06-06T08:33:18.518110",
+    "estado": "en_desarrollo"
+  },
+  {
+    "nombre": "Proyecto de Web",
+    "tipo": "faq",
+    "fecha": "2026-06-06T08:33:18.519113",
+    "estado": "en_desarrollo"
+  },
+  {
+    "nombre": "Proyecto de DevOps",
+    "tipo": "presentacion",
+    "fecha": "2026-06-06T08:33:18.520116",
+    "estado": "en_desarrollo"
+  },
+  {
+    "nombre": "Proyecto de MobileWeb",
+    "tipo": "mobile_ui",
+    "fecha": "2026-06-06T08:33:18.521114",
+    "estado": "en_desarrollo"
+  },
+  {
+    "nombre": "Proyecto de SCAS",
+    "tipo": "video_download",
+    "fecha": "2026-06-06T08:33:18.522117",
+    "estado": "en_desarrollo"
+  }
+]

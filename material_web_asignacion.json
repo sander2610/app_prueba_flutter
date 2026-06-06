@@ -1,0 +1,57 @@
+{
+  "FlutterFix": [
+    "button",
+    "textfield",
+    "dialog",
+    "tabs",
+    "progress"
+  ],
+  "Web": [
+    "button",
+    "menu",
+    "list",
+    "checkbox",
+    "radio"
+  ],
+  "GameDev": [
+    "slider",
+    "progress",
+    "dialog",
+    "switch"
+  ],
+  "DataScience": [
+    "tabs",
+    "select",
+    "slider",
+    "progress"
+  ],
+  "QA": [
+    "button",
+    "textfield",
+    "checkbox",
+    "radio"
+  ],
+  "DevOps": [
+    "list",
+    "menu",
+    "dialog",
+    "progress"
+  ],
+  "Security": [
+    "dialog",
+    "textfield",
+    "button"
+  ],
+  "MobileWeb": [
+    "button",
+    "tabs",
+    "menu",
+    "iconbutton"
+  ],
+  "SCAS": [
+    "list",
+    "dialog",
+    "progress",
+    "button"
+  ]
+}
